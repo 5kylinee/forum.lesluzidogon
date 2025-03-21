@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Forum</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Sign Up</h2>
-        <form id="registerForm">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="text" id="secretCode" placeholder="Enter Secret Code" required>
-            <button type="submit">Register</button>
-        </form>
-        <p>Already have an account? <a href="index.html">Login</a></p>
-    </div>
-
-    <script src="app.js"></script>
+    <h2>Register</h2>
+    <form action="RegisterServlet" method="post">
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="text" name="secret_code" placeholder="Enter Secret Code" required>
+        <button type="submit">Register</button>
+    </form>
 </body>
 </html>
